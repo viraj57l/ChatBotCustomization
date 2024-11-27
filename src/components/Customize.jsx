@@ -2,9 +2,9 @@ import React from "react";
 
 const Customize = ({ customizations, updateCustomization }) => {
   return (
-    <div className="customize h-full w-[380px] lg:w-[1000px] bg-white  border-none rounded-xl">
+    <div className="customize h-full w-[380px] lg:w-[450px] bg-white  border-none rounded-xl">
       {/* title */}
-      <div className=" flex gap-3 h-16 w-[380px] lg:w-[1000px] bg-slate-900 border-2 border-slate-950 rounded-t-xl p-4 text-lg">
+      <div className=" flex gap-3 h-16 w-[380px] lg:w-[450px] bg-slate-900 border-2 border-slate-950 rounded-t-xl p-4 text-lg">
         <h2 className="text-white">Customize Chatbot</h2>
       </div>
 
@@ -130,7 +130,7 @@ const Customize = ({ customizations, updateCustomization }) => {
         {/* Button Icon */}
 
         <div className="mr-3">
-          <label className="block text-sm font-medium">Button Icon</label>
+          <label className="block text-sm font-medium">Chatbot Icon</label>
           <input
             type="file"
             accept="image/*"
@@ -149,6 +149,7 @@ const Customize = ({ customizations, updateCustomization }) => {
             }}
             className="mt-1 block w-full lg:w-[400px]"
           />
+          <label className=" text-sm text-slate-400">*Close the chatbot to see changes for chatbot icon</label>
         </div>
       </div>
     </div>
